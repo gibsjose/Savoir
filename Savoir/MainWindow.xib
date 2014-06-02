@@ -4,7 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController"/>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController">
+            <connections>
+                <outlet property="window" destination="PPw-hs-pVh" id="8fB-Xx-dJp"/>
+            </connections>
+        </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
         <window identifier="MainWindow" title="Savoir" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="PPw-hs-pVh">
@@ -45,32 +49,41 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button identifier="MainAjouterVerbesButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-PD-PLC">
+                    <button identifier="MainAjouterVerbesButton" toolTip="Add New Verbs!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-PD-PLC">
                         <rect key="frame" x="68" y="194" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Ajouter Verbes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DIc-xt-KmJ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="addVerbButton:" target="-2" id="FLy-NU-1BS"/>
+                        </connections>
                     </button>
-                    <button identifier="MainAjouterVocabButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feV-uN-IMg">
+                    <button identifier="MainAjouterVocabButton" toolTip="Add New Vocabulary!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feV-uN-IMg">
                         <rect key="frame" x="68" y="161" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Ajouter Vocabulaire" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="44I-no-6X3">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="addVocabButton:" target="-2" id="JRT-FU-NM4"/>
+                        </connections>
                     </button>
-                    <button identifier="MainTestezMoiButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-6J-ugr">
-                        <rect key="frame" x="68" y="128" width="165" height="32"/>
+                    <button identifier="MainTestezMoiButton" toolTip="Test your skills!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-6J-ugr">
+                        <rect key="frame" x="68" y="85" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Testez-moi!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9KK-wZ-tW7">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="testMeButton:" target="-2" id="OlQ-gT-We3"/>
+                        </connections>
                     </button>
-                    <button identifier="QuitterButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-gM-Rhc">
-                        <rect key="frame" x="68" y="70" width="165" height="32"/>
+                    <button identifier="QuitterButton" toolTip="Quit Savoir" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-gM-Rhc">
+                        <rect key="frame" x="68" y="43" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Quitter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VOo-iB-yHa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -79,9 +92,26 @@
 DQ
 </string>
                         </buttonCell>
+                        <connections>
+                            <action selector="quit:" target="-2" id="TKf-2p-k7w"/>
+                        </connections>
+                    </button>
+                    <button identifier="ExploreButton" toolTip="Explore Verbs and Vocabulary!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0F-YW-NtO">
+                        <rect key="frame" x="68" y="118" width="165" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Explorer!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s94-on-1n3">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="exploreButton:" target="-2" id="87p-B0-QYx"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="181-oi-kRG"/>
+            </connections>
         </window>
     </objects>
     <resources>

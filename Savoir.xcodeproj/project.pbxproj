@@ -10,6 +10,10 @@
 		D817D54D193CD2D1009B0A23 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D817D54C193CD2D1009B0A23 /* MainWindowController.m */; };
 		D817D550193CD30A009B0A23 /* AddVerbWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D817D54F193CD30A009B0A23 /* AddVerbWindowController.m */; };
 		D817D553193CD31C009B0A23 /* AddVocabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D817D552193CD31C009B0A23 /* AddVocabWindowController.m */; };
+		D8705F88193CEB64008BEFDD /* ExploreWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8705F87193CEB64008BEFDD /* ExploreWindow.xib */; };
+		D8705F8B193CEBB4008BEFDD /* ExploreWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8705F8A193CEBB4008BEFDD /* ExploreWindowController.m */; };
+		D8705F8D193CEE14008BEFDD /* TestMeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8705F8C193CEE14008BEFDD /* TestMeWindow.xib */; };
+		D8705F90193CEE62008BEFDD /* TestMeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8705F8F193CEE62008BEFDD /* TestMeWindowController.m */; };
 		D897B50F193C0AE900FC31BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B50E193C0AE900FC31BA /* Cocoa.framework */; };
 		D897B519193C0AE900FC31BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D897B517193C0AE900FC31BA /* InfoPlist.strings */; };
 		D897B51B193C0AE900FC31BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D897B51A193C0AE900FC31BA /* main.m */; };
@@ -50,6 +54,12 @@
 		D817D54F193CD30A009B0A23 /* AddVerbWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVerbWindowController.m; sourceTree = "<group>"; };
 		D817D551193CD31C009B0A23 /* AddVocabWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddVocabWindowController.h; sourceTree = "<group>"; };
 		D817D552193CD31C009B0A23 /* AddVocabWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVocabWindowController.m; sourceTree = "<group>"; };
+		D8705F87193CEB64008BEFDD /* ExploreWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreWindow.xib; sourceTree = "<group>"; };
+		D8705F89193CEBB3008BEFDD /* ExploreWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreWindowController.h; sourceTree = "<group>"; };
+		D8705F8A193CEBB4008BEFDD /* ExploreWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreWindowController.m; sourceTree = "<group>"; };
+		D8705F8C193CEE14008BEFDD /* TestMeWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestMeWindow.xib; sourceTree = "<group>"; };
+		D8705F8E193CEE62008BEFDD /* TestMeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMeWindowController.h; sourceTree = "<group>"; };
+		D8705F8F193CEE62008BEFDD /* TestMeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMeWindowController.m; sourceTree = "<group>"; };
 		D897B50B193C0AE900FC31BA /* Savoir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savoir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D897B50E193C0AE900FC31BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D897B511193C0AE900FC31BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -159,6 +169,12 @@
 				D897B551193C244D00FC31BA /* AddVocabWindow.xib */,
 				D817D551193CD31C009B0A23 /* AddVocabWindowController.h */,
 				D817D552193CD31C009B0A23 /* AddVocabWindowController.m */,
+				D8705F87193CEB64008BEFDD /* ExploreWindow.xib */,
+				D8705F89193CEBB3008BEFDD /* ExploreWindowController.h */,
+				D8705F8A193CEBB4008BEFDD /* ExploreWindowController.m */,
+				D8705F8C193CEE14008BEFDD /* TestMeWindow.xib */,
+				D8705F8E193CEE62008BEFDD /* TestMeWindowController.h */,
+				D8705F8F193CEE62008BEFDD /* TestMeWindowController.m */,
 				D897B526193C0AEA00FC31BA /* Images.xcassets */,
 				D897B515193C0AE900FC31BA /* Supporting Files */,
 			);
@@ -289,8 +305,10 @@
 				D897B54C193C155200FC31BA /* Savoir-512.png in Resources */,
 				D897B527193C0AEA00FC31BA /* Images.xcassets in Resources */,
 				D897B54B193C155200FC31BA /* Savoir-256.png in Resources */,
+				D8705F88193CEB64008BEFDD /* ExploreWindow.xib in Resources */,
 				D897B55A193CCD0D00FC31BA /* MainWindow.xib in Resources */,
 				D897B550193C23FE00FC31BA /* AddVerbWindow.xib in Resources */,
+				D8705F8D193CEE14008BEFDD /* TestMeWindow.xib in Resources */,
 				D897B54D193C155200FC31BA /* Savoir-Title.png in Resources */,
 				D897B51F193C0AEA00FC31BA /* Credits.rtf in Resources */,
 				D897B54E193C155200FC31BA /* Savoir.png in Resources */,
@@ -317,7 +335,9 @@
 			files = (
 				D817D550193CD30A009B0A23 /* AddVerbWindowController.m in Sources */,
 				D817D553193CD31C009B0A23 /* AddVocabWindowController.m in Sources */,
+				D8705F90193CEE62008BEFDD /* TestMeWindowController.m in Sources */,
 				D817D54D193CD2D1009B0A23 /* MainWindowController.m in Sources */,
+				D8705F8B193CEBB4008BEFDD /* ExploreWindowController.m in Sources */,
 				D897B522193C0AEA00FC31BA /* AppDelegate.m in Sources */,
 				D897B51B193C0AE900FC31BA /* main.m in Sources */,
 			);

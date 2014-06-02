@@ -18,8 +18,6 @@
     //Initialize and display the main window
     mainWindowController = [[MainWindowController alloc] init];
     [mainWindowController showWindow:nil];
-    
-    
 }
 
 @end

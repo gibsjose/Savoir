@@ -6,11 +6,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="AddVocabWindowController">
             <connections>
-                <outlet property="addVocab" destination="omK-pI-MUj" id="vW5-5O-j0o"/>
-                <outlet property="ajouterVocabWindow" destination="HFv-7g-ECR" id="SfZ-Y2-fab"/>
-                <outlet property="anglaisTextField" destination="iVr-22-Jns" id="PW4-bq-c3M"/>
-                <outlet property="closeWindow" destination="Lh8-9O-d8A" id="SgI-32-TdX"/>
-                <outlet property="francaisTextField" destination="9WL-pt-7Ps" id="N0N-Tv-8rk"/>
                 <outlet property="window" destination="HFv-7g-ECR" id="6aA-kM-ZdD"/>
             </connections>
         </customObject>
@@ -37,7 +32,7 @@ Gw
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="closeWindow:" target="-2" id="Cfp-fF-nur"/>
+                            <action selector="performClose:" target="HFv-7g-ECR" id="ov6-Rr-p1t"/>
                         </connections>
                     </button>
                     <button identifier="AddVocabButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omK-pI-MUj">
@@ -50,9 +45,6 @@ Gw
 DQ
 </string>
                         </buttonCell>
-                        <connections>
-                            <action selector="addVocab:" target="-2" id="9ZP-6k-0fv"/>
-                        </connections>
                     </button>
                     <textField identifier="AnglaisVocabTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVr-22-Jns">
                         <rect key="frame" x="89" y="208" width="137" height="22"/>
@@ -62,9 +54,6 @@ DQ
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="anglaisTextFieldAction:" target="-2" id="B8e-Jc-q4d"/>
-                        </connections>
                     </textField>
                     <textField identifier="FranciasVocabTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9WL-pt-7Ps">
                         <rect key="frame" x="243" y="208" width="137" height="22"/>
@@ -74,9 +63,6 @@ DQ
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="francaisTextFieldAction:" target="-2" id="BnR-bk-OAa"/>
-                        </connections>
                     </textField>
                     <textField identifier="AnglaisVocabText" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oI0-fG-q0v">
                         <rect key="frame" x="33" y="211" width="50" height="17"/>

@@ -7,14 +7,14 @@
         <customObject id="-2" userLabel="File's Owner" customClass="AddVerbWindowController">
             <connections>
                 <outlet property="ajouterVerbesWindow" destination="Csg-0e-iCs" id="5VQ-NU-1l5"/>
-                <outlet property="anglaisTextField" destination="IfS-ki-KPm" id="Naq-c2-bSz"/>
-                <outlet property="ilTextField" destination="vii-v8-afX" id="gfM-BV-qBj"/>
-                <outlet property="ilsTextField" destination="Ufw-kI-nkX" id="rfj-vB-Fqf"/>
-                <outlet property="infinitifTextField" destination="38o-OP-UaD" id="YGg-BH-2D3"/>
-                <outlet property="jeTextField" destination="DnN-va-zy9" id="aKa-6I-7t4"/>
-                <outlet property="nousTextField" destination="uvz-2c-1Mo" id="2SB-83-kTO"/>
-                <outlet property="tuTextField" destination="Oto-AV-KBN" id="gW6-20-gDX"/>
-                <outlet property="vousTextField" destination="f6s-NT-dks" id="OqR-bD-rUe"/>
+                <outlet property="englishTextField" destination="IfS-ki-KPm" id="faK-iH-fub"/>
+                <outlet property="ilTextField" destination="vii-v8-afX" id="ftX-5R-Dk2"/>
+                <outlet property="ilsTextField" destination="Ufw-kI-nkX" id="6F3-ds-gQ3"/>
+                <outlet property="infinitiveTextField" destination="38o-OP-UaD" id="od4-CC-t2F"/>
+                <outlet property="jeTextField" destination="DnN-va-zy9" id="yo0-yE-wBj"/>
+                <outlet property="nousTextField" destination="uvz-2c-1Mo" id="eu7-ti-OoW"/>
+                <outlet property="tuTextField" destination="Oto-AV-KBN" id="Nnr-q2-E7V"/>
+                <outlet property="vousTextField" destination="f6s-NT-dks" id="rNy-Jn-9uB"/>
                 <outlet property="window" destination="Csg-0e-iCs" id="huP-oU-rmr"/>
             </connections>
         </customObject>
@@ -38,9 +38,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="anglaisTextFieldAction:" target="-2" id="Xm0-zc-tYQ"/>
-                        </connections>
                     </textField>
                     <textField identifier="InfinitifTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="38o-OP-UaD">
                         <rect key="frame" x="249" y="254" width="137" height="22"/>
@@ -50,9 +47,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="infinitifTextFieldAction:" target="-2" id="IFH-L6-rhx"/>
-                        </connections>
                     </textField>
                     <textField identifier="AnglaisText" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-aD-2Sn">
                         <rect key="frame" x="39" y="257" width="50" height="17"/>
@@ -87,9 +81,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="jeTextFieldAction:" target="-2" id="KdD-JR-j18"/>
-                        </connections>
                     </textField>
                     <textField identifier="NousTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvz-2c-1Mo">
                         <rect key="frame" x="249" y="181" width="137" height="22"/>
@@ -99,9 +90,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="nousTextFieldAction:" target="-2" id="36I-me-tCy"/>
-                        </connections>
                     </textField>
                     <textField identifier="TuTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oto-AV-KBN">
                         <rect key="frame" x="95" y="149" width="137" height="22"/>
@@ -111,9 +99,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="tuTextFieldAction:" target="-2" id="6mF-sH-efP"/>
-                        </connections>
                     </textField>
                     <textField identifier="IlTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vii-v8-afX">
                         <rect key="frame" x="95" y="117" width="137" height="22"/>
@@ -123,9 +108,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="ilTextFieldAction:" target="-2" id="wDy-dd-HDO"/>
-                        </connections>
                     </textField>
                     <textField identifier="VousTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6s-NT-dks">
                         <rect key="frame" x="249" y="149" width="137" height="22"/>
@@ -135,9 +117,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="vousTextFieldAction:" target="-2" id="3Wh-tt-MXK"/>
-                        </connections>
                     </textField>
                     <textField identifier="IlsTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ufw-kI-nkX">
                         <rect key="frame" x="249" y="117" width="137" height="22"/>
@@ -147,9 +126,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="ilsTextFieldAction:" target="-2" id="O0f-na-w6e"/>
-                        </connections>
                     </textField>
                     <textField identifier="JeText" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kjx-d7-DbS">
                         <rect key="frame" x="73" y="184" width="16" height="17"/>
@@ -216,7 +192,7 @@ DQ
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="addVerb:" target="-2" id="hyu-hK-5ks"/>
+                            <action selector="addVerbButton:" target="-2" id="Vse-C8-gAM"/>
                         </connections>
                     </button>
                     <button identifier="CancelButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUS-Pz-4ll">
@@ -230,13 +206,12 @@ Gw
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="closeWindow:" target="-2" id="svN-3p-Kbd"/>
+                            <action selector="performClose:" target="Csg-0e-iCs" id="KVp-ob-1Tx"/>
                         </connections>
                     </button>
                 </subviews>
             </view>
             <connections>
-                <binding destination="-3" name="representedFilename" keyPath="self.ajouterVerbesWindow" id="Uqh-ox-s48"/>
                 <outlet property="delegate" destination="-2" id="9Sf-6h-usy"/>
             </connections>
         </window>

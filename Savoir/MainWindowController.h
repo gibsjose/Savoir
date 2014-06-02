@@ -8,6 +8,26 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class AddVerbWindowController;
+@class AddVocabWindowController;
+@class ExploreWindowController;
+@class TestMeWindowController;
+
 @interface MainWindowController : NSWindowController
+{
+    AddVerbWindowController *addVerbWindowController;
+    AddVocabWindowController *addVocabWindowController;
+    
+    ExploreWindowController *exploreWindowController;
+    TestMeWindowController *testMeWindowController;
+}
+
+- (IBAction)addVerbButton:(id)sender;
+- (IBAction)addVocabButton:(id)sender;
+
+- (IBAction)exploreButton:(id)sender;
+- (IBAction)testMeButton:(id)sender;
+
+- (IBAction)quit:(id)sender;
 
 @end
