@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D897B50F193C0AE900FC31BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B50E193C0AE900FC31BA /* Cocoa.framework */; };
+		D897B519193C0AE900FC31BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D897B517193C0AE900FC31BA /* InfoPlist.strings */; };
+		D897B51B193C0AE900FC31BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D897B51A193C0AE900FC31BA /* main.m */; };
+		D897B51F193C0AEA00FC31BA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D897B51D193C0AEA00FC31BA /* Credits.rtf */; };
+		D897B522193C0AEA00FC31BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D897B521193C0AEA00FC31BA /* AppDelegate.m */; };
+		D897B525193C0AEA00FC31BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D897B523193C0AEA00FC31BA /* MainMenu.xib */; };
+		D897B527193C0AEA00FC31BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D897B526193C0AEA00FC31BA /* Images.xcassets */; };
+		D897B52E193C0AEA00FC31BA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B52D193C0AEA00FC31BA /* XCTest.framework */; };
+		D897B52F193C0AEA00FC31BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B50E193C0AE900FC31BA /* Cocoa.framework */; };
+		D897B537193C0AEA00FC31BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D897B535193C0AEA00FC31BA /* InfoPlist.strings */; };
+		D897B539193C0AEA00FC31BA /* SavoirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D897B538193C0AEA00FC31BA /* SavoirTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D897B530193C0AEA00FC31BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D897B503193C0AE900FC31BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D897B50A193C0AE900FC31BA;
+			remoteInfo = Savoir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D897B50B193C0AE900FC31BA /* Savoir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savoir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D897B50E193C0AE900FC31BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D897B511193C0AE900FC31BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D897B512193C0AE900FC31BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D897B513193C0AE900FC31BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D897B516193C0AE900FC31BA /* Savoir-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Savoir-Info.plist"; sourceTree = "<group>"; };
+		D897B518193C0AE900FC31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D897B51A193C0AE900FC31BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D897B51C193C0AE900FC31BA /* Savoir-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Savoir-Prefix.pch"; sourceTree = "<group>"; };
+		D897B51E193C0AEA00FC31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D897B520193C0AEA00FC31BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D897B521193C0AEA00FC31BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D897B524193C0AEA00FC31BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D897B526193C0AEA00FC31BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D897B52C193C0AEA00FC31BA /* SavoirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavoirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D897B52D193C0AEA00FC31BA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D897B534193C0AEA00FC31BA /* SavoirTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SavoirTests-Info.plist"; sourceTree = "<group>"; };
+		D897B536193C0AEA00FC31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D897B538193C0AEA00FC31BA /* SavoirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavoirTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D897B508193C0AE900FC31BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D897B50F193C0AE900FC31BA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D897B529193C0AEA00FC31BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D897B52F193C0AEA00FC31BA /* Cocoa.framework in Frameworks */,
+				D897B52E193C0AEA00FC31BA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D897B502193C0AE900FC31BA = {
+			isa = PBXGroup;
+			children = (
+				D897B514193C0AE900FC31BA /* Savoir */,
+				D897B532193C0AEA00FC31BA /* SavoirTests */,
+				D897B50D193C0AE900FC31BA /* Frameworks */,
+				D897B50C193C0AE900FC31BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D897B50C193C0AE900FC31BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D897B50B193C0AE900FC31BA /* Savoir.app */,
+				D897B52C193C0AEA00FC31BA /* SavoirTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D897B50D193C0AE900FC31BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D897B50E193C0AE900FC31BA /* Cocoa.framework */,
+				D897B52D193C0AEA00FC31BA /* XCTest.framework */,
+				D897B510193C0AE900FC31BA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D897B510193C0AE900FC31BA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D897B511193C0AE900FC31BA /* AppKit.framework */,
+				D897B512193C0AE900FC31BA /* CoreData.framework */,
+				D897B513193C0AE900FC31BA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D897B514193C0AE900FC31BA /* Savoir */ = {
+			isa = PBXGroup;
+			children = (
+				D897B520193C0AEA00FC31BA /* AppDelegate.h */,
+				D897B521193C0AEA00FC31BA /* AppDelegate.m */,
+				D897B523193C0AEA00FC31BA /* MainMenu.xib */,
+				D897B526193C0AEA00FC31BA /* Images.xcassets */,
+				D897B515193C0AE900FC31BA /* Supporting Files */,
+			);
+			path = Savoir;
+			sourceTree = "<group>";
+		};
+		D897B515193C0AE900FC31BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D897B516193C0AE900FC31BA /* Savoir-Info.plist */,
+				D897B517193C0AE900FC31BA /* InfoPlist.strings */,
+				D897B51A193C0AE900FC31BA /* main.m */,
+				D897B51C193C0AE900FC31BA /* Savoir-Prefix.pch */,
+				D897B51D193C0AEA00FC31BA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D897B532193C0AEA00FC31BA /* SavoirTests */ = {
+			isa = PBXGroup;
+			children = (
+				D897B538193C0AEA00FC31BA /* SavoirTests.m */,
+				D897B533193C0AEA00FC31BA /* Supporting Files */,
+			);
+			path = SavoirTests;
+			sourceTree = "<group>";
+		};
+		D897B533193C0AEA00FC31BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D897B534193C0AEA00FC31BA /* SavoirTests-Info.plist */,
+				D897B535193C0AEA00FC31BA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D897B50A193C0AE900FC31BA /* Savoir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D897B53C193C0AEA00FC31BA /* Build configuration list for PBXNativeTarget "Savoir" */;
+			buildPhases = (
+				D897B507193C0AE900FC31BA /* Sources */,
+				D897B508193C0AE900FC31BA /* Frameworks */,
+				D897B509193C0AE900FC31BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Savoir;
+			productName = Savoir;
+			productReference = D897B50B193C0AE900FC31BA /* Savoir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D897B52B193C0AEA00FC31BA /* SavoirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D897B53F193C0AEA00FC31BA /* Build configuration list for PBXNativeTarget "SavoirTests" */;
+			buildPhases = (
+				D897B528193C0AEA00FC31BA /* Sources */,
+				D897B529193C0AEA00FC31BA /* Frameworks */,
+				D897B52A193C0AEA00FC31BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D897B531193C0AEA00FC31BA /* PBXTargetDependency */,
+			);
+			name = SavoirTests;
+			productName = SavoirTests;
+			productReference = D897B52C193C0AEA00FC31BA /* SavoirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D897B503193C0AE900FC31BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = gibsjose;
+				TargetAttributes = {
+					D897B52B193C0AEA00FC31BA = {
+						TestTargetID = D897B50A193C0AE900FC31BA;
+					};
+				};
+			};
+			buildConfigurationList = D897B506193C0AE900FC31BA /* Build configuration list for PBXProject "Savoir" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D897B502193C0AE900FC31BA;
+			productRefGroup = D897B50C193C0AE900FC31BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D897B50A193C0AE900FC31BA /* Savoir */,
+				D897B52B193C0AEA00FC31BA /* SavoirTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D897B509193C0AE900FC31BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D897B519193C0AE900FC31BA /* InfoPlist.strings in Resources */,
+				D897B527193C0AEA00FC31BA /* Images.xcassets in Resources */,
+				D897B51F193C0AEA00FC31BA /* Credits.rtf in Resources */,
+				D897B525193C0AEA00FC31BA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D897B52A193C0AEA00FC31BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D897B537193C0AEA00FC31BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D897B507193C0AE900FC31BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D897B522193C0AEA00FC31BA /* AppDelegate.m in Sources */,
+				D897B51B193C0AE900FC31BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D897B528193C0AEA00FC31BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D897B539193C0AEA00FC31BA /* SavoirTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D897B531193C0AEA00FC31BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D897B50A193C0AE900FC31BA /* Savoir */;
+			targetProxy = D897B530193C0AEA00FC31BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D897B517193C0AE900FC31BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D897B518193C0AE900FC31BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D897B51D193C0AEA00FC31BA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D897B51E193C0AEA00FC31BA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D897B523193C0AEA00FC31BA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D897B524193C0AEA00FC31BA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D897B535193C0AEA00FC31BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D897B536193C0AEA00FC31BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D897B53A193C0AEA00FC31BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D897B53B193C0AEA00FC31BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D897B53D193C0AEA00FC31BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Savoir/Savoir-Prefix.pch";
+				INFOPLIST_FILE = "Savoir/Savoir-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D897B53E193C0AEA00FC31BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Savoir/Savoir-Prefix.pch";
+				INFOPLIST_FILE = "Savoir/Savoir-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D897B540193C0AEA00FC31BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Savoir.app/Contents/MacOS/Savoir";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Savoir/Savoir-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SavoirTests/SavoirTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D897B541193C0AEA00FC31BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Savoir.app/Contents/MacOS/Savoir";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Savoir/Savoir-Prefix.pch";
+				INFOPLIST_FILE = "SavoirTests/SavoirTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D897B506193C0AE900FC31BA /* Build configuration list for PBXProject "Savoir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D897B53A193C0AEA00FC31BA /* Debug */,
+				D897B53B193C0AEA00FC31BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D897B53C193C0AEA00FC31BA /* Build configuration list for PBXNativeTarget "Savoir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D897B53D193C0AEA00FC31BA /* Debug */,
+				D897B53E193C0AEA00FC31BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D897B53F193C0AEA00FC31BA /* Build configuration list for PBXNativeTarget "SavoirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D897B540193C0AEA00FC31BA /* Debug */,
+				D897B541193C0AEA00FC31BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D897B503193C0AE900FC31BA /* Project object */;
+}
