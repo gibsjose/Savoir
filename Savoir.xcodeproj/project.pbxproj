@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D817D54D193CD2D1009B0A23 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D817D54C193CD2D1009B0A23 /* MainWindowController.m */; };
+		D817D550193CD30A009B0A23 /* AddVerbWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D817D54F193CD30A009B0A23 /* AddVerbWindowController.m */; };
+		D817D553193CD31C009B0A23 /* AddVocabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D817D552193CD31C009B0A23 /* AddVocabWindowController.m */; };
 		D897B50F193C0AE900FC31BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B50E193C0AE900FC31BA /* Cocoa.framework */; };
 		D897B519193C0AE900FC31BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D897B517193C0AE900FC31BA /* InfoPlist.strings */; };
 		D897B51B193C0AE900FC31BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D897B51A193C0AE900FC31BA /* main.m */; };
@@ -18,6 +21,16 @@
 		D897B52F193C0AEA00FC31BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B50E193C0AE900FC31BA /* Cocoa.framework */; };
 		D897B537193C0AEA00FC31BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D897B535193C0AEA00FC31BA /* InfoPlist.strings */; };
 		D897B539193C0AEA00FC31BA /* SavoirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D897B538193C0AEA00FC31BA /* SavoirTests.m */; };
+		D897B549193C155200FC31BA /* Savoir-64.png in Resources */ = {isa = PBXBuildFile; fileRef = D897B543193C155200FC31BA /* Savoir-64.png */; };
+		D897B54A193C155200FC31BA /* Savoir-128.png in Resources */ = {isa = PBXBuildFile; fileRef = D897B544193C155200FC31BA /* Savoir-128.png */; };
+		D897B54B193C155200FC31BA /* Savoir-256.png in Resources */ = {isa = PBXBuildFile; fileRef = D897B545193C155200FC31BA /* Savoir-256.png */; };
+		D897B54C193C155200FC31BA /* Savoir-512.png in Resources */ = {isa = PBXBuildFile; fileRef = D897B546193C155200FC31BA /* Savoir-512.png */; };
+		D897B54D193C155200FC31BA /* Savoir-Title.png in Resources */ = {isa = PBXBuildFile; fileRef = D897B547193C155200FC31BA /* Savoir-Title.png */; };
+		D897B54E193C155200FC31BA /* Savoir.png in Resources */ = {isa = PBXBuildFile; fileRef = D897B548193C155200FC31BA /* Savoir.png */; };
+		D897B550193C23FE00FC31BA /* AddVerbWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D897B54F193C23FE00FC31BA /* AddVerbWindow.xib */; };
+		D897B552193C244D00FC31BA /* AddVocabWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D897B551193C244D00FC31BA /* AddVocabWindow.xib */; };
+		D897B55A193CCD0D00FC31BA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D897B559193CCD0D00FC31BA /* MainWindow.xib */; };
+		D897B568193CCFDE00FC31BA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B567193CCFDE00FC31BA /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D817D54B193CD2D1009B0A23 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		D817D54C193CD2D1009B0A23 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		D817D54E193CD30A009B0A23 /* AddVerbWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddVerbWindowController.h; sourceTree = "<group>"; };
+		D817D54F193CD30A009B0A23 /* AddVerbWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVerbWindowController.m; sourceTree = "<group>"; };
+		D817D551193CD31C009B0A23 /* AddVocabWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddVocabWindowController.h; sourceTree = "<group>"; };
+		D817D552193CD31C009B0A23 /* AddVocabWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVocabWindowController.m; sourceTree = "<group>"; };
 		D897B50B193C0AE900FC31BA /* Savoir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savoir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D897B50E193C0AE900FC31BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D897B511193C0AE900FC31BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +69,16 @@
 		D897B534193C0AEA00FC31BA /* SavoirTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SavoirTests-Info.plist"; sourceTree = "<group>"; };
 		D897B536193C0AEA00FC31BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D897B538193C0AEA00FC31BA /* SavoirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavoirTests.m; sourceTree = "<group>"; };
+		D897B543193C155200FC31BA /* Savoir-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Savoir-64.png"; sourceTree = SOURCE_ROOT; };
+		D897B544193C155200FC31BA /* Savoir-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Savoir-128.png"; sourceTree = SOURCE_ROOT; };
+		D897B545193C155200FC31BA /* Savoir-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Savoir-256.png"; sourceTree = SOURCE_ROOT; };
+		D897B546193C155200FC31BA /* Savoir-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Savoir-512.png"; sourceTree = SOURCE_ROOT; };
+		D897B547193C155200FC31BA /* Savoir-Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Savoir-Title.png"; sourceTree = SOURCE_ROOT; };
+		D897B548193C155200FC31BA /* Savoir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Savoir.png; sourceTree = SOURCE_ROOT; };
+		D897B54F193C23FE00FC31BA /* AddVerbWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddVerbWindow.xib; path = ../AddVerbWindow.xib; sourceTree = "<group>"; };
+		D897B551193C244D00FC31BA /* AddVocabWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddVocabWindow.xib; sourceTree = "<group>"; };
+		D897B559193CCD0D00FC31BA /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		D897B567193CCFDE00FC31BA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D897B568193CCFDE00FC31BA /* libsqlite3.dylib in Frameworks */,
 				D897B50F193C0AE900FC31BA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +106,7 @@
 		D897B502193C0AE900FC31BA = {
 			isa = PBXGroup;
 			children = (
+				D897B542193C152300FC31BA /* Images */,
 				D897B514193C0AE900FC31BA /* Savoir */,
 				D897B532193C0AEA00FC31BA /* SavoirTests */,
 				D897B50D193C0AE900FC31BA /* Frameworks */,
@@ -95,6 +126,7 @@
 		D897B50D193C0AE900FC31BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D897B567193CCFDE00FC31BA /* libsqlite3.dylib */,
 				D897B50E193C0AE900FC31BA /* Cocoa.framework */,
 				D897B52D193C0AEA00FC31BA /* XCTest.framework */,
 				D897B510193C0AE900FC31BA /* Other Frameworks */,
@@ -118,6 +150,15 @@
 				D897B520193C0AEA00FC31BA /* AppDelegate.h */,
 				D897B521193C0AEA00FC31BA /* AppDelegate.m */,
 				D897B523193C0AEA00FC31BA /* MainMenu.xib */,
+				D897B559193CCD0D00FC31BA /* MainWindow.xib */,
+				D817D54B193CD2D1009B0A23 /* MainWindowController.h */,
+				D817D54C193CD2D1009B0A23 /* MainWindowController.m */,
+				D897B54F193C23FE00FC31BA /* AddVerbWindow.xib */,
+				D817D54E193CD30A009B0A23 /* AddVerbWindowController.h */,
+				D817D54F193CD30A009B0A23 /* AddVerbWindowController.m */,
+				D897B551193C244D00FC31BA /* AddVocabWindow.xib */,
+				D817D551193CD31C009B0A23 /* AddVocabWindowController.h */,
+				D817D552193CD31C009B0A23 /* AddVocabWindowController.m */,
 				D897B526193C0AEA00FC31BA /* Images.xcassets */,
 				D897B515193C0AE900FC31BA /* Supporting Files */,
 			);
@@ -152,6 +193,19 @@
 				D897B535193C0AEA00FC31BA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D897B542193C152300FC31BA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D897B543193C155200FC31BA /* Savoir-64.png */,
+				D897B544193C155200FC31BA /* Savoir-128.png */,
+				D897B545193C155200FC31BA /* Savoir-256.png */,
+				D897B546193C155200FC31BA /* Savoir-512.png */,
+				D897B547193C155200FC31BA /* Savoir-Title.png */,
+				D897B548193C155200FC31BA /* Savoir.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +285,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D897B519193C0AE900FC31BA /* InfoPlist.strings in Resources */,
+				D897B54A193C155200FC31BA /* Savoir-128.png in Resources */,
+				D897B54C193C155200FC31BA /* Savoir-512.png in Resources */,
 				D897B527193C0AEA00FC31BA /* Images.xcassets in Resources */,
+				D897B54B193C155200FC31BA /* Savoir-256.png in Resources */,
+				D897B55A193CCD0D00FC31BA /* MainWindow.xib in Resources */,
+				D897B550193C23FE00FC31BA /* AddVerbWindow.xib in Resources */,
+				D897B54D193C155200FC31BA /* Savoir-Title.png in Resources */,
 				D897B51F193C0AEA00FC31BA /* Credits.rtf in Resources */,
+				D897B54E193C155200FC31BA /* Savoir.png in Resources */,
+				D897B549193C155200FC31BA /* Savoir-64.png in Resources */,
+				D897B552193C244D00FC31BA /* AddVocabWindow.xib in Resources */,
 				D897B525193C0AEA00FC31BA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D817D550193CD30A009B0A23 /* AddVerbWindowController.m in Sources */,
+				D817D553193CD31C009B0A23 /* AddVocabWindowController.m in Sources */,
+				D817D54D193CD2D1009B0A23 /* MainWindowController.m in Sources */,
 				D897B522193C0AEA00FC31BA /* AppDelegate.m in Sources */,
 				D897B51B193C0AE900FC31BA /* main.m in Sources */,
 			);
@@ -466,6 +532,7 @@
 				D897B53E193C0AEA00FC31BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D897B53F193C0AEA00FC31BA /* Build configuration list for PBXNativeTarget "SavoirTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +541,7 @@
 				D897B541193C0AEA00FC31BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

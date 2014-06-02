@@ -8,8 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@class MainWindowController;
+@class AddVerbWindowController;
+@class AddVocabWindowController;
 
-@property (assign) IBOutlet NSWindow *window;
+@interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    MainWindowController *mainWindowController;
+    AddVerbWindowController *addVerbWindowController;
+    AddVocabWindowController *addVocabWindowController;
+}
 
 @end
