@@ -35,6 +35,12 @@
     fieldsFilled = 0;
 }
 
+- (IBAction)modeListAction:(id)sender {
+}
+
+- (IBAction)tenseListAction:(id)sender {
+}
+
 - (IBAction)addVerbButton:(id)sender {
     
     fieldsFilled = 0;

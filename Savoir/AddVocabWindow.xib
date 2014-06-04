@@ -54,6 +54,9 @@ DQ
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="9WL-pt-7Ps" id="NBD-fa-ZAA"/>
+                        </connections>
                     </textField>
                     <textField identifier="FranciasVocabTextField" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9WL-pt-7Ps">
                         <rect key="frame" x="243" y="208" width="137" height="22"/>
@@ -63,6 +66,9 @@ DQ
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="iVr-22-Jns" id="P8r-H0-H26"/>
+                        </connections>
                     </textField>
                     <textField identifier="AnglaisVocabText" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oI0-fG-q0v">
                         <rect key="frame" x="33" y="211" width="50" height="17"/>
@@ -83,7 +89,7 @@ DQ
                         </textFieldCell>
                     </textField>
                     <box autoresizesSubviews="NO" horizontalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="W0w-po-KGj">
-                        <rect key="frame" x="232" y="192" width="4" height="54"/>
+                        <rect key="frame" x="232" y="192" width="5" height="54"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -93,6 +99,7 @@ DQ
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="eiT-8V-2Nn"/>
+                <outlet property="initialFirstResponder" destination="iVr-22-Jns" id="6TJ-wA-USa"/>
             </connections>
         </window>
     </objects>

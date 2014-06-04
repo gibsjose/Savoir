@@ -21,6 +21,8 @@
     
     int fieldsFilled;
 }
+@property (weak) IBOutlet NSPopUpButton *modeList;
+@property (weak) IBOutlet NSPopUpButton *tenseList;
 
 @property (weak) IBOutlet NSTextField *englishTextField;
 @property (weak) IBOutlet NSTextField *infinitiveTextField;
@@ -30,6 +32,9 @@
 @property (weak) IBOutlet NSTextField *nousTextField;
 @property (weak) IBOutlet NSTextField *vousTextField;
 @property (weak) IBOutlet NSTextField *ilsTextField;
+
+- (IBAction)modeListAction:(id)sender;
+- (IBAction)tenseListAction:(id)sender;
 
 - (IBAction)addVerbButton:(id)sender;
 
