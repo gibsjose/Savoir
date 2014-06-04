@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Savoir-Title" id="Oww-rN-q6X"/>
                     </imageView>
-                    <textField identifier="SahvWahText" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1UN-xU-gut">
+                    <textField identifier="SahvWahText" toolTip="Savoir - (To know) is pronounced 'Sahv-wah'" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1UN-xU-gut">
                         <rect key="frame" x="109" y="241" width="82" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="'Sahv-wah'" id="YaY-o1-fqQ">
@@ -40,7 +40,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField identifier="CopyrightText" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YtX-IH-QLF">
+                    <textField identifier="CopyrightText" toolTip="© 2014 gibsjose" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YtX-IH-QLF">
                         <rect key="frame" x="-2" y="16" width="82" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="© 2014" id="Ygx-Xc-lew">
@@ -49,7 +49,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button identifier="MainAjouterVerbesButton" toolTip="Add New Verbs!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-PD-PLC">
+                    <button identifier="AddVerbsButton" toolTip="Add New Verbs!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-PD-PLC">
                         <rect key="frame" x="68" y="205" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Ajouter Verbes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DIc-xt-KmJ">
@@ -60,7 +60,7 @@
                             <action selector="addVerbButton:" target="-2" id="FLy-NU-1BS"/>
                         </connections>
                     </button>
-                    <button identifier="MainAjouterVocabButton" toolTip="Add New Vocabulary!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feV-uN-IMg">
+                    <button identifier="AddVocabButton" toolTip="Add New Vocabulary!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feV-uN-IMg">
                         <rect key="frame" x="68" y="172" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Ajouter Vocabulaire" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="44I-no-6X3">
@@ -71,7 +71,7 @@
                             <action selector="addVocabButton:" target="-2" id="JRT-FU-NM4"/>
                         </connections>
                     </button>
-                    <button identifier="MainTestezMoiButton" toolTip="Test your skills!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-6J-ugr">
+                    <button identifier="TestMeButton" toolTip="Test your skills!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-6J-ugr">
                         <rect key="frame" x="68" y="106" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Testez-moi!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9KK-wZ-tW7">
@@ -80,20 +80,6 @@
                         </buttonCell>
                         <connections>
                             <action selector="testMeButton:" target="-2" id="OlQ-gT-We3"/>
-                        </connections>
-                    </button>
-                    <button identifier="QuitterButton" toolTip="Quit Savoir" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-gM-Rhc">
-                        <rect key="frame" x="68" y="73" width="165" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Quitter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VOo-iB-yHa">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent" base64-UTF8="YES">
-DQ
-</string>
-                        </buttonCell>
-                        <connections>
-                            <action selector="quit:" target="-2" id="TKf-2p-k7w"/>
                         </connections>
                     </button>
                     <button identifier="ExploreButton" toolTip="Explore Verbs and Vocabulary!" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0F-YW-NtO">
@@ -107,11 +93,28 @@ DQ
                             <action selector="exploreButton:" target="-2" id="87p-B0-QYx"/>
                         </connections>
                     </button>
-                    <imageView identifier="gibsjoseImage" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-A6-QiD">
-                        <rect key="frame" x="156" y="3" width="202" height="51"/>
+                    <button identifier="QuitButton" toolTip="Quit Savoir" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-gM-Rhc">
+                        <rect key="frame" x="68" y="73" width="165" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="gibsjose-512x128" id="LYe-S2-Pb6"/>
-                    </imageView>
+                        <buttonCell key="cell" type="push" title="Quitter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VOo-iB-yHa">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="quit:" target="-2" id="TKf-2p-k7w"/>
+                        </connections>
+                    </button>
+                    <button identifier="gibsjoseButton" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlt-tS-q61" customClass="GibsjoseButton">
+                        <rect key="frame" x="190" y="3" width="100" height="53"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="gibsjose-150x88" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="jhZ-NI-Dob">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
             </view>
             <connections>
@@ -122,6 +125,6 @@ DQ
     <resources>
         <image name="Savoir-64" width="512" height="512"/>
         <image name="Savoir-Title" width="256" height="48"/>
-        <image name="gibsjose-512x128" width="512" height="128"/>
+        <image name="gibsjose-150x88" width="150" height="88"/>
     </resources>
 </document>

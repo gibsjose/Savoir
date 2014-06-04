@@ -39,6 +39,9 @@
 		D8D1E633193E9B8600B98341 /* gibsjose-512x128.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E631193E9B8600B98341 /* gibsjose-512x128.png */; };
 		D8D1E639193EA09400B98341 /* SAVVerb.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D1E638193EA09400B98341 /* SAVVerb.m */; };
 		D8D1E63D193EAB2F00B98341 /* SAVVerbInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D1E63C193EAB2F00B98341 /* SAVVerbInstance.m */; };
+		D8D1E640193EBD4E00B98341 /* gibsjose-150x88.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E63E193EBD4E00B98341 /* gibsjose-150x88.png */; };
+		D8D1E641193EBD4E00B98341 /* gibsjose-pressed-150x88.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E63F193EBD4E00B98341 /* gibsjose-pressed-150x88.png */; };
+		D8D1E644193EBF0200B98341 /* GibsjoseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D1E643193EBF0200B98341 /* GibsjoseButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,10 @@
 		D8D1E638193EA09400B98341 /* SAVVerb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAVVerb.m; sourceTree = "<group>"; };
 		D8D1E63B193EAB2F00B98341 /* SAVVerbInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAVVerbInstance.h; sourceTree = "<group>"; };
 		D8D1E63C193EAB2F00B98341 /* SAVVerbInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAVVerbInstance.m; sourceTree = "<group>"; };
+		D8D1E63E193EBD4E00B98341 /* gibsjose-150x88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gibsjose-150x88.png"; sourceTree = "<group>"; };
+		D8D1E63F193EBD4E00B98341 /* gibsjose-pressed-150x88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gibsjose-pressed-150x88.png"; sourceTree = "<group>"; };
+		D8D1E642193EBF0200B98341 /* GibsjoseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GibsjoseButton.h; sourceTree = "<group>"; };
+		D8D1E643193EBF0200B98341 /* GibsjoseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GibsjoseButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +195,7 @@
 				D8D1E63A193EA82B00B98341 /* Verb Classes */,
 				D897B526193C0AEA00FC31BA /* Images.xcassets */,
 				D897B515193C0AE900FC31BA /* Supporting Files */,
+				D8D1E645193EBF0600B98341 /* Gibsjose Button */,
 			);
 			path = Savoir;
 			sourceTree = "<group>";
@@ -225,6 +233,8 @@
 		D897B542193C152300FC31BA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D8D1E63E193EBD4E00B98341 /* gibsjose-150x88.png */,
+				D8D1E63F193EBD4E00B98341 /* gibsjose-pressed-150x88.png */,
 				D8D1E630193E9B8600B98341 /* gibsjose-160x40.png */,
 				D8D1E631193E9B8600B98341 /* gibsjose-512x128.png */,
 				D897B543193C155200FC31BA /* Savoir-64.png */,
@@ -246,6 +256,15 @@
 				D8D1E63C193EAB2F00B98341 /* SAVVerbInstance.m */,
 			);
 			name = "Verb Classes";
+			sourceTree = "<group>";
+		};
+		D8D1E645193EBF0600B98341 /* Gibsjose Button */ = {
+			isa = PBXGroup;
+			children = (
+				D8D1E642193EBF0200B98341 /* GibsjoseButton.h */,
+				D8D1E643193EBF0200B98341 /* GibsjoseButton.m */,
+			);
+			name = "Gibsjose Button";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,8 +352,10 @@
 				D897B55A193CCD0D00FC31BA /* MainWindow.xib in Resources */,
 				D897B550193C23FE00FC31BA /* AddVerbWindow.xib in Resources */,
 				D8705F8D193CEE14008BEFDD /* TestMeWindow.xib in Resources */,
+				D8D1E641193EBD4E00B98341 /* gibsjose-pressed-150x88.png in Resources */,
 				D897B54D193C155200FC31BA /* Savoir-Title.png in Resources */,
 				D897B51F193C0AEA00FC31BA /* Credits.rtf in Resources */,
+				D8D1E640193EBD4E00B98341 /* gibsjose-150x88.png in Resources */,
 				D8D1E633193E9B8600B98341 /* gibsjose-512x128.png in Resources */,
 				D897B54E193C155200FC31BA /* Savoir.png in Resources */,
 				D8D1E632193E9B8600B98341 /* gibsjose-160x40.png in Resources */,
@@ -360,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D817D550193CD30A009B0A23 /* AddVerbWindowController.m in Sources */,
+				D8D1E644193EBF0200B98341 /* GibsjoseButton.m in Sources */,
 				D817D553193CD31C009B0A23 /* AddVocabWindowController.m in Sources */,
 				D8705F90193CEE62008BEFDD /* TestMeWindowController.m in Sources */,
 				D817D54D193CD2D1009B0A23 /* MainWindowController.m in Sources */,

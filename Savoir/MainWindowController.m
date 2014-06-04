@@ -54,11 +54,10 @@
     [testMeWindowController showWindow:nil];
 }
 
-
-
 - (IBAction)quit:(id)sender {
     
     //Quit Application
     exit(0);
 }
+
 @end
