@@ -26,6 +26,8 @@
     // Drawing code here.
 }
 
+//@TODO Override mouseOver and !mouseOver methods instead
+
 - (void)mouseDown:(NSEvent *)theEvent
 {
     NSImage *image = [NSImage imageNamed:@"gibsjose-pressed-150x88.png"];
@@ -40,7 +42,7 @@
     [self setImage:image];
     
     //Go to URL
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://www.google.com"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.gibsjose.com/"]];
 }
 
 @end

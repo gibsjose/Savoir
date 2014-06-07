@@ -35,8 +35,6 @@
 		D897B552193C244D00FC31BA /* AddVocabWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D897B551193C244D00FC31BA /* AddVocabWindow.xib */; };
 		D897B55A193CCD0D00FC31BA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D897B559193CCD0D00FC31BA /* MainWindow.xib */; };
 		D897B568193CCFDE00FC31BA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D897B567193CCFDE00FC31BA /* libsqlite3.dylib */; };
-		D8D1E632193E9B8600B98341 /* gibsjose-160x40.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E630193E9B8600B98341 /* gibsjose-160x40.png */; };
-		D8D1E633193E9B8600B98341 /* gibsjose-512x128.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E631193E9B8600B98341 /* gibsjose-512x128.png */; };
 		D8D1E639193EA09400B98341 /* SAVVerb.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D1E638193EA09400B98341 /* SAVVerb.m */; };
 		D8D1E63D193EAB2F00B98341 /* SAVVerbInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D1E63C193EAB2F00B98341 /* SAVVerbInstance.m */; };
 		D8D1E640193EBD4E00B98341 /* gibsjose-150x88.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E63E193EBD4E00B98341 /* gibsjose-150x88.png */; };
@@ -96,8 +94,6 @@
 		D897B551193C244D00FC31BA /* AddVocabWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddVocabWindow.xib; sourceTree = "<group>"; };
 		D897B559193CCD0D00FC31BA /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		D897B567193CCFDE00FC31BA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		D8D1E630193E9B8600B98341 /* gibsjose-160x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gibsjose-160x40.png"; sourceTree = SOURCE_ROOT; };
-		D8D1E631193E9B8600B98341 /* gibsjose-512x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gibsjose-512x128.png"; sourceTree = SOURCE_ROOT; };
 		D8D1E637193EA09400B98341 /* SAVVerb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAVVerb.h; sourceTree = "<group>"; };
 		D8D1E638193EA09400B98341 /* SAVVerb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAVVerb.m; sourceTree = "<group>"; };
 		D8D1E63B193EAB2F00B98341 /* SAVVerbInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAVVerbInstance.h; sourceTree = "<group>"; };
@@ -235,8 +231,6 @@
 			children = (
 				D8D1E63E193EBD4E00B98341 /* gibsjose-150x88.png */,
 				D8D1E63F193EBD4E00B98341 /* gibsjose-pressed-150x88.png */,
-				D8D1E630193E9B8600B98341 /* gibsjose-160x40.png */,
-				D8D1E631193E9B8600B98341 /* gibsjose-512x128.png */,
 				D897B543193C155200FC31BA /* Savoir-64.png */,
 				D897B544193C155200FC31BA /* Savoir-128.png */,
 				D897B545193C155200FC31BA /* Savoir-256.png */,
@@ -356,9 +350,7 @@
 				D897B54D193C155200FC31BA /* Savoir-Title.png in Resources */,
 				D897B51F193C0AEA00FC31BA /* Credits.rtf in Resources */,
 				D8D1E640193EBD4E00B98341 /* gibsjose-150x88.png in Resources */,
-				D8D1E633193E9B8600B98341 /* gibsjose-512x128.png in Resources */,
 				D897B54E193C155200FC31BA /* Savoir.png in Resources */,
-				D8D1E632193E9B8600B98341 /* gibsjose-160x40.png in Resources */,
 				D897B549193C155200FC31BA /* Savoir-64.png in Resources */,
 				D897B552193C244D00FC31BA /* AddVocabWindow.xib in Resources */,
 				D897B525193C0AEA00FC31BA /* MainMenu.xib in Resources */,
