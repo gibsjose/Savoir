@@ -7,13 +7,18 @@
         <customObject id="-2" userLabel="File's Owner" customClass="AddVerbWindowController">
             <connections>
                 <outlet property="ajouterVerbesWindow" destination="Csg-0e-iCs" id="5VQ-NU-1l5"/>
+                <outlet property="englishInfinitiveTextField" destination="IfS-ki-KPm" id="EcZ-Kh-PZ6"/>
                 <outlet property="englishTextField" destination="IfS-ki-KPm" id="faK-iH-fub"/>
+                <outlet property="frenchInfinitiveTextField" destination="38o-OP-UaD" id="WjT-eD-Ea0"/>
                 <outlet property="ilTextField" destination="vii-v8-afX" id="ftX-5R-Dk2"/>
                 <outlet property="ilsTextField" destination="Ufw-kI-nkX" id="6F3-ds-gQ3"/>
                 <outlet property="infinitiveTextField" destination="38o-OP-UaD" id="od4-CC-t2F"/>
                 <outlet property="jeTextField" destination="DnN-va-zy9" id="yo0-yE-wBj"/>
                 <outlet property="modeList" destination="PYa-dg-r66" id="0ub-w2-bvo"/>
+                <outlet property="moodList" destination="PYa-dg-r66" id="Ywa-R5-uV8"/>
                 <outlet property="nousTextField" destination="uvz-2c-1Mo" id="eu7-ti-OoW"/>
+                <outlet property="pastParticipleTextField" destination="k1z-sR-4Fl" id="h9L-h7-MYa"/>
+                <outlet property="presentParticipleTextField" destination="vP0-wq-DiP" id="izJ-Zu-PAT"/>
                 <outlet property="tenseList" destination="DQx-k5-rty" id="ChE-2B-hK7"/>
                 <outlet property="tuTextField" destination="Oto-AV-KBN" id="Nnr-q2-E7V"/>
                 <outlet property="vousTextField" destination="f6s-NT-dks" id="rNy-Jn-9uB"/>
@@ -32,7 +37,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField identifier="AnglaisTextField" toolTip="English Verb Form" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfS-ki-KPm">
+                    <textField identifier="EnglishInfinitiveTextField" toolTip="English Verb Form" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfS-ki-KPm">
                         <rect key="frame" x="95" y="254" width="137" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="mVk-9E-iem">
@@ -44,7 +49,7 @@
                             <outlet property="nextKeyView" destination="38o-OP-UaD" id="gBm-1W-p0E"/>
                         </connections>
                     </textField>
-                    <textField identifier="InfinitifTextField" toolTip="Infinitive Form" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="38o-OP-UaD">
+                    <textField identifier="FrenchInfinitiveTextField" toolTip="Infinitive Form" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="38o-OP-UaD">
                         <rect key="frame" x="249" y="254" width="137" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="6mV-fa-72g">
@@ -285,12 +290,19 @@ Gw
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="oQ1-Tw-NSu">
                                 <items>
-                                    <menuItem title="Présent" state="on" id="WXr-2m-k4o"/>
-                                    <menuItem title="Passé Simple" id="SQu-iL-9n4">
+                                    <menuItem title="Présent" state="on" id="WXr-2m-k4o">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
-                                    <menuItem title="Imparfait" id="a2z-Sd-B7D"/>
-                                    <menuItem title="Futur Simple" id="dg1-BW-kOL">
+                                    <menuItem title="Passé Simple" tag="1" id="SQu-iL-9n4">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Imparfait" tag="2" id="a2z-Sd-B7D">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Futur Simple" tag="3" id="dg1-BW-kOL">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Conditionnel" tag="4" id="XtF-MO-N6c">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
                                 </items>
@@ -300,17 +312,24 @@ Gw
                             <action selector="tenseListAction:" target="-2" id="POw-xb-YQk"/>
                         </connections>
                     </popUpButton>
-                    <popUpButton toolTip="Mood" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-dg-r66">
+                    <popUpButton identifier="MoodPopUpButton" toolTip="Mood" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-dg-r66">
                         <rect key="frame" x="175" y="48" width="131" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="Imperatif" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9Ki-FR-AQW" id="7gF-c9-0rs">
+                        <popUpButtonCell key="cell" type="push" title="Indicatif" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="8T1-w6-hs3" id="7gF-c9-0rs">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="Yhd-Sr-Kbw">
                                 <items>
-                                    <menuItem title="Indicatif" id="8T1-w6-hs3"/>
-                                    <menuItem title="Subjonctif" id="Id5-Ye-88g"/>
-                                    <menuItem title="Imperatif" state="on" id="9Ki-FR-AQW">
+                                    <menuItem title="Indicatif" state="on" id="8T1-w6-hs3">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="moodListAction:" target="-2" id="9Mh-WP-Uv4"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Subjonctif" tag="1" id="Id5-Ye-88g">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Imperatif" tag="2" id="9Ki-FR-AQW">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
                                 </items>

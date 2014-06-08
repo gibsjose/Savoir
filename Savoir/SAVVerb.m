@@ -16,16 +16,7 @@
 @synthesize presentParticiple = _presentParticiple;
 @synthesize pastParticiple = _pastParticiple;
 
-@synthesize indicativePresent = _indicativePresent;
-@synthesize indicativePastSimple = _indicativePastSimple;
-@synthesize indicativeImperfect = _indicativeImperfect;
-@synthesize indicativeFutureSimple = _indicativeFutureSimple;
-@synthesize indicativeConditional = _indicativeConditional;
-
-@synthesize subjunctivePresent = _subjunctivePresent;
-@synthesize subjunctiveImperfect = _subjunctiveImperfect;
-
-@synthesize imperativePresent = _imperativePresent;
+@synthesize verbInstances = _verbInstances;
 
 - (id) init {
     
@@ -36,20 +27,65 @@
         _presentParticiple = [NSString string];
         _pastParticiple = [NSString string];
 
-        _indicativePresent = [[SAVVerbInstance alloc] initWithMood:Indicative tense:Present];
-        _indicativePastSimple = [[SAVVerbInstance alloc] initWithMood:Indicative tense:PastSimple];
-        _indicativeImperfect = [[SAVVerbInstance alloc] initWithMood:Indicative tense:Imperfect];
-        _indicativeFutureSimple = [[SAVVerbInstance alloc] initWithMood:Indicative tense:FutureSimple];
-        _indicativeConditional = [[SAVVerbInstance alloc] initWithMood:Indicative tense:Conditional];
+        //Alloc and initialize all verb instance types
+        SAVVerbInstance *indicativePresent = [[SAVVerbInstance alloc] initWithMood:Indicative tense:Present];
+        SAVVerbInstance *indicativePastSimple = [[SAVVerbInstance alloc] initWithMood:Indicative tense:PastSimple];
+        SAVVerbInstance *indicativeImperfect = [[SAVVerbInstance alloc] initWithMood:Indicative tense:Imperfect];
+        SAVVerbInstance *indicativeFutureSimple = [[SAVVerbInstance alloc] initWithMood:Indicative tense:FutureSimple];
+        SAVVerbInstance *indicativeConditional = [[SAVVerbInstance alloc] initWithMood:Indicative tense:Conditional];
+        SAVVerbInstance *subjunctivePresent = [[SAVVerbInstance alloc] initWithMood:Subjunctive tense:Present];
+        SAVVerbInstance *subjunctiveImperfect = [[SAVVerbInstance alloc] initWithMood:Subjunctive tense:Imperfect];
+        SAVVerbInstance *imperativePresent = [[SAVVerbInstance alloc] initWithMood:Imperative tense:Present];
         
-        _subjunctivePresent = [[SAVVerbInstance alloc] initWithMood:Subjunctive tense:Present];
-        _subjunctiveImperfect = [[SAVVerbInstance alloc] initWithMood:Subjunctive tense:Imperfect];
-        
-        _imperativePresent = [[SAVVerbInstance alloc] initWithMood:Imperative tense:Present];
+        //Initialize verb instance array
+        _verbInstances = [[NSArray alloc] initWithObjects:
+                          (SAVVerbInstance *)indicativePresent,
+                          (SAVVerbInstance *)indicativePastSimple,
+                          (SAVVerbInstance *)indicativeImperfect,
+                          (SAVVerbInstance *)indicativeFutureSimple,
+                          (SAVVerbInstance *)indicativeConditional,
+                          (SAVVerbInstance *)subjunctivePresent,
+                          (SAVVerbInstance *)subjunctiveImperfect,
+                          (SAVVerbInstance *)imperativePresent,
+                          nil];
     }
     
     return self;
 }
 
+- (BOOL)isValid {
+    int count = 0;
+    
+    //Check english infinitive
+    if (![_englishInfinitive isEqualToString:@""]) {
+        count++;
+    }
+    
+    if (![_frenchInfinitive isEqualToString:@""]) {
+        count++;
+    }
+    
+    if (![_presentParticiple isEqualToString:@""]) {
+        count++;
+    }
+    
+    if (![_pastParticiple isEqualToString:@""]) {
+        count++;
+    }
+    
+    //Check all moods/tenses
+    for (int i = 0; i < 8; i++) {
+        if ([[_verbInstances objectAtIndex:i] isValid]) {
+            count++;
+        }
+    }
+    
+    if (count >= 12) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
+}
 
 @end

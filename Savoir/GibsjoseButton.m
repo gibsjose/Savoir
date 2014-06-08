@@ -42,7 +42,7 @@
     [self setImage:image];
     
     //Go to URL
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.gibsjose.com/"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.gibsjose.com/projects.html"]];
 }
 
 @end

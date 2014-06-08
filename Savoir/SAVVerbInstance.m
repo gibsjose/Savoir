@@ -10,6 +10,8 @@
 
 @implementation SAVVerbInstance
 
+@synthesize valid = _valid;
+
 @synthesize je = _je;
 @synthesize tu = _tu;
 @synthesize il = _il;
@@ -23,6 +25,8 @@
 - (id)init {
     
     if (self = [super init]) {
+        _valid = false;
+        
         _je = [NSString string];
         _tu = [NSString string];
         _il = [NSString string];
@@ -45,6 +49,53 @@
     }
     
     return self;
+}
+
+- (BOOL)isValid {
+    int count = 0;
+    
+    if (![_je isEqualToString:@""]) {
+        count++;
+    }
+    else if (_mood == Imperative)
+    {
+        count++;
+    }
+    
+    if (![_tu isEqualToString:@""]) {
+        count++;
+    }
+    
+    if (![_il isEqualToString:@""]) {
+        count++;
+    }
+    else if (_mood == Imperative)
+    {
+        count++;
+    }
+    
+    if (![_nous isEqualToString:@""]) {
+        count++;
+    }
+    
+    if (![_vous isEqualToString:@""]) {
+        count++;
+    }
+    
+    if (![_ils isEqualToString:@""]) {
+        count++;
+    }
+    else if (_mood == Imperative)
+    {
+        count++;
+    }
+    
+    if (count >= 6) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
 }
 
 @end

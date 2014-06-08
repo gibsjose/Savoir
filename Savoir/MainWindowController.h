@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SAVVerb.h"
+#import "sqlite3.h"
 
 @class AddVerbWindowController;
 @class AddVocabWindowController;

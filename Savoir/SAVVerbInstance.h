@@ -28,6 +28,8 @@ typedef enum SAVTense_t
     
 }SAVTense_t;
 
+@property (readonly) BOOL valid;
+
 @property NSString *je;
 @property NSString *tu;
 @property NSString *il;
@@ -39,5 +41,6 @@ typedef enum SAVTense_t
 @property SAVTense_t tense;
 
 - (id)initWithMood:(SAVMood_t)mood tense:(SAVTense_t)tense;
+- (BOOL)isValid;
 
 @end
